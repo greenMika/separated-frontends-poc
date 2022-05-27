@@ -1,0 +1,15 @@
+services:
+  user-management:
+    build:
+      context: ../user-management
+    environment:
+      APP_ROOT_PATH: "/test"
+    ports:
+      - "3000:3000"
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ../user-management/dist:/var/www/user-management
+    ports:
+      - 8080:8080

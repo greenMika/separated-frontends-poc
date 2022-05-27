@@ -1,3 +1,7 @@
+user-management/node_modules
+.idea
+
+
 # Logs
 logs
 *.log
