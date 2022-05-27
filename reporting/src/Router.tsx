@@ -8,6 +8,7 @@ import {Layout} from "./components/Layout";
 import {Dashboard} from "./pages/Dashboard";
 import {Assets} from "./pages/Assets";
 import {Tags} from "./pages/Tags";
+import {Detail} from "./pages/Detail";
 
 export const Router = () => {
     return (
@@ -17,6 +18,7 @@ export const Router = () => {
                     <Route path={"/"} element={<Dashboard />}/>
                     <Route path={"/assets"} element={<Assets />}/>
                     <Route path={"/tags"} element={<Tags />}/>
+                    <Route path={"/report/:id"} element={<Detail />}/>
                 </Route>
 
             </Routes>
