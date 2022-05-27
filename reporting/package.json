@@ -1,10 +1,10 @@
 {
-  "name": "user-management",
+  "name": "reporting",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --base=/user-management/",
+    "build": "tsc && vite build --base=/reporting/",
     "preview": "vite preview"
   },
   "dependencies": {

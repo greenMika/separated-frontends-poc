@@ -6,15 +6,17 @@ import {
 import App from "./App";
 import {Layout} from "./components/Layout";
 import {Dashboard} from "./pages/Dashboard";
-import {Permissions} from "./pages/Permissions";
+import {Assets} from "./pages/Assets";
+import {Tags} from "./pages/Tags";
 
 export const Router = () => {
     return (
-        <BrowserRouter basename={"/user-management"} >
+        <BrowserRouter basename={"/reporting"} >
             <Routes>
                 <Route element={<Layout />}>
                     <Route path={"/"} element={<Dashboard />}/>
-                    <Route path={"/configuration"} element={<Permissions />}/>
+                    <Route path={"/assets"} element={<Assets />}/>
+                    <Route path={"/tags"} element={<Tags />}/>
                 </Route>
 
             </Routes>
