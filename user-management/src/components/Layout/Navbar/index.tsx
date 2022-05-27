@@ -50,7 +50,7 @@ export function NavbarSimple() {
 
     return (
         <Navbar className={classes.navbar} width={{sm: 211}}>
-            <Navbar.Section row>
+            <Navbar.Section grow>
                 {linkGroups.map(linkGroup => <LinksGroup label={linkGroup.label} links={linkGroup.links}/>)}
             </Navbar.Section>
         </Navbar>

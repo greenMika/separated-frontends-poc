@@ -11,6 +11,7 @@ services:
     volumes:
       - ./nginx:/etc/nginx/conf.d
       - ../user-management/dist:/var/www/user-management
+      - ../reporting/dist:/var/www/reporting
     ports:
       - 8080:8080
     links:
