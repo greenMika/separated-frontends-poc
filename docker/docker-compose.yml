@@ -1,11 +1,11 @@
 services:
-  user-management:
+  scan-management:
     build:
-      context: ../user-management
+      context: ../scan-management
     environment:
       APP_ROOT_PATH: "/test"
     ports:
-      - "3000:3000"
+      - "3001:3000"
   nginx:
     image: nginx:latest
     volumes:
@@ -13,3 +13,5 @@ services:
       - ../user-management/dist:/var/www/user-management
     ports:
       - 8080:8080
+    links:
+      - "scan-management:scan-management"
